@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1087</width>
+    <height>746</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <widget class="QLabel" name="listOfVowels">
+              <property name="text">
+               <string>List of Vowels:</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignRight">
+             <widget class="QPushButton" name="vowelImport">
+              <property name="text">
+               <string>Import</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="vowels">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Ignored" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="listOfbases">
+              <property name="text">
+               <string>List of Bases:</string>
+              </property>
+             </widget>
+            </item>
+            <item alignment="Qt::AlignRight">
+             <widget class="QPushButton" name="baseImport">
+              <property name="text">
+               <string>Import</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QLabel" name="sylNum">
+              <property name="text">
+               <string>Number of Syllables:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="numberOfSyl">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>999999999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QLabel" name="genNumber">
+              <property name="text">
+               <string>Number of Generations:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QSpinBox" name="numberOfGen">
+              <property name="minimum">
+               <number>1</number>
+              </property>
+              <property name="maximum">
+               <number>999999999</number>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
+        <item>
+         <widget class="QPlainTextEdit" name="input">
+          <property name="lineWrapMode">
+           <enum>QPlainTextEdit::NoWrap</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPlainTextEdit" name="output">
+          <property name="lineWrapMode">
+           <enum>QPlainTextEdit::NoWrap</enum>
+          </property>
+          <property name="textInteractionFlags">
+           <set>Qt::TextSelectableByKeyboard|Qt::TextSelectableByMouse</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="save">
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1087</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuChoose_Language">
+    <property name="title">
+     <string>Select Preset</string>
+    </property>
+    <widget class="QMenu" name="menuEnglish">
+     <property name="title">
+      <string>English</string>
+     </property>
+     <widget class="QMenu" name="menuFirst_name">
+      <property name="title">
+       <string>First Name</string>
+      </property>
+      <addaction name="actionMale"/>
+      <addaction name="actionFemale"/>
+     </widget>
+     <addaction name="menuFirst_name"/>
+     <addaction name="actionLast_Name"/>
+    </widget>
+    <widget class="QMenu" name="menuHungarian">
+     <property name="title">
+      <string>Hungarian</string>
+     </property>
+     <widget class="QMenu" name="menuFirst_Name">
+      <property name="title">
+       <string>First Name</string>
+      </property>
+      <addaction name="actionMale_2"/>
+      <addaction name="actionFemale_2"/>
+     </widget>
+     <addaction name="menuFirst_Name"/>
+     <addaction name="actionLast_Name_2"/>
+    </widget>
+    <addaction name="menuEnglish"/>
+    <addaction name="menuHungarian"/>
+   </widget>
+   <addaction name="menuChoose_Language"/>
+  </widget>
+  <action name="actionEnglish_Last">
+   <property name="text">
+    <string>English Last Name</string>
+   </property>
+  </action>
+  <action name="actionHungarian_First">
+   <property name="text">
+    <string>Hungarian First Name</string>
+   </property>
+  </action>
+  <action name="actionMale">
+   <property name="text">
+    <string>Male</string>
+   </property>
+  </action>
+  <action name="actionFemale">
+   <property name="text">
+    <string>Female</string>
+   </property>
+  </action>
+  <action name="actionLast_Name">
+   <property name="text">
+    <string>Last Name</string>
+   </property>
+  </action>
+  <action name="actionMale_2">
+   <property name="text">
+    <string>Male</string>
+   </property>
+  </action>
+  <action name="actionFemale_2">
+   <property name="text">
+    <string>Female</string>
+   </property>
+  </action>
+  <action name="actionLast_Name_2">
+   <property name="text">
+    <string>Last Name</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
