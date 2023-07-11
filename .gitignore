@@ -43,4 +43,9 @@ go.work
 .history
 .ionide
 
+vendor/
+deploy/
+linux/
+cucc.jpg
+
 # End of https://www.toptal.com/developers/gitignore/api/visualstudiocode,go

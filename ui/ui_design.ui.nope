@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Chawurgon</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QGridLayout" name="gridLayout">
@@ -47,6 +47,9 @@
               <verstretch>0</verstretch>
              </sizepolicy>
             </property>
+            <property name="text">
+             <string>aeiou</string>
+            </property>
            </widget>
           </item>
           <item>
@@ -58,12 +61,35 @@
               </property>
              </widget>
             </item>
-            <item alignment="Qt::AlignRight">
-             <widget class="QPushButton" name="baseImport">
-              <property name="text">
-               <string>Import</string>
-              </property>
-             </widget>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_7">
+              <item alignment="Qt::AlignLeft">
+               <widget class="QCheckBox" name="checkBox">
+                <property name="layoutDirection">
+                 <enum>Qt::RightToLeft</enum>
+                </property>
+                <property name="text">
+                 <string>Keep current list</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="baseImport">
+                <property name="enabled">
+                 <bool>true</bool>
+                </property>
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>Import</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </item>
            </layout>
           </item>
@@ -86,7 +112,7 @@
                <number>1</number>
               </property>
               <property name="maximum">
-               <number>999999999</number>
+               <number>999</number>
               </property>
              </widget>
             </item>
@@ -107,7 +133,7 @@
                <number>1</number>
               </property>
               <property name="maximum">
-               <number>999999999</number>
+               <number>999</number>
               </property>
              </widget>
             </item>
@@ -154,6 +180,13 @@
          </size>
         </property>
        </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="generate">
+        <property name="text">
+         <string>Generate</string>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="save">
